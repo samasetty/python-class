@@ -2,6 +2,7 @@
 # - Integer (Whole Number) {aka int()}
 # - Float (Decimal Number) {aka float()}
 # - String (letters) {aka str()}
+# - Boolean (True/False) {aka bool()}
 
 # Lets play around with some!
 # Python syntax to defining variables are really easy.
@@ -36,3 +37,11 @@ a = "Hello World"
 
 print(a) # Prints "Hello World"
 print(type(a)) # Prints <class 'str'>
+
+# Booleans
+# Booleans can only have 1 of 2 values: True or False
+a = True # Notice how True is written, the case matters!
+b = False # Same thing here!
+print(a,b)
+print(type(a))
+print(type(b))
