@@ -1,8 +1,8 @@
 import pickle  # Pickle essentially obscures data we give it until later need
 
-def store_info(path_name="data.bin"):  # Handler to pickle some data
+def store_info(path_name="data.bin",statements=3):  # Handler to pickle some data to use later
     data = {} # Empty dictionary to hold our string then our bool
-    num_true = 2 # Number of truths we want
+    num_true = statements-1 # Number of truths we want
     num_false = 1 # Number of lies we want
     def get_boolean(): # Handler to get a boolean value from an input we will use later on
         x = input(f"Is this True or False?\n> ") # Basic input
@@ -16,7 +16,7 @@ def store_info(path_name="data.bin"):  # Handler to pickle some data
         a = input(f"What is the #{i+1} statement?\n> ") # Basic input
         x = get_boolean() # This is where we used the above function to get a boolean value
         if x:             # This statement here makes sure that we don't go under the amount of trues and falses we want
-            num_true -= 1 # Simply: If I got a true, then subtract one from the total of trues available, and same for false
+            num_true -= 1 # Simply: If I said a true statement, then subtract one from the total of trues available, and same for false
         else:
             num_false -= 1
         if num_true < 0: # If we do go under the limits, then exit the function
@@ -24,7 +24,7 @@ def store_info(path_name="data.bin"):  # Handler to pickle some data
         elif num_false < 0:
             return print("There are too many false statements!")
         data[a] = x
-    if len(data) < 3: # Make sure we didn't type anything twice
+    if len(data) < statements: # Make sure we didn't type anything twice
         return print("You have too few arguments!\nMaybe you typed the same thing twice?")
     with open(path_name, 'wb') as f: # This is how we pickle the data to another file
         pickle.dump(data, f) # .dump() dumps the data into a file that we want
