@@ -12,7 +12,7 @@ def store_info(path_name="data.bin",statements=3):  # Handler to pickle some dat
             return True
         elif x.lower().strip() == "false":
             return False
-    for i in range(0, 3): # Loop to start asking for the statements
+    for i in range(0, statements): # Loop to start asking for the statements
         a = input(f"What is the #{i+1} statement?\n> ") # Basic input
         x = get_boolean() # This is where we used the above function to get a boolean value
         if x:             # This statement here makes sure that we don't go under the amount of trues and falses we want
@@ -36,11 +36,11 @@ def play(path="data.bin"): # Handler to actually play
         param = pickle.load(f) # Assign the data (a dictionary) to a variable called param
     for i in range(0,len(param)): # This is a for loop to list all the options -- very bulky to do
         print(f"({i+1}) {list(param.keys())[i]}") # This is just a print statement beautifying the options to make it readable
-    answer = int(input("Which one is a lie?\n(number)> ")) # Ask for the answer based on the options above
+    answer = int(input("Which one is a lie?\n(#)> ")) # Ask for the answer based on the options above
     if not list(param.items())[answer-1][1]: # Check if the answer is false, and if so, print that you won
         print("You won!")
     else:
         print("You lost!")
 
-store_info() # Run the pickling handler
+store_info(statements=5) # Run the pickling handler
 play() # Play the game
