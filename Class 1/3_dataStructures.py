@@ -48,7 +48,7 @@ print(a[2])  # Prints "banana"
 # First Value = 0
 # Second Value = 1
 # Third Value = 2
-# nth Value = n + 1
+# nth Value = n - 1
 
 # I want to see the second value in the list
 print(a[1]) # Prints 2.5
