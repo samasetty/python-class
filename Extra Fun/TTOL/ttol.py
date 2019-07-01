@@ -11,6 +11,7 @@
 #              A file will be generated in the same directory and that will contain your info so you can share with others!
 # Author: Anish Govind
 # GitHub: https://github.com/generaldefence
+# Dependencies: Pickle
 # 
 # Comments provided to help new Python learners understand
 
@@ -21,6 +22,8 @@ def store_info(path_name="ttol.bin",statements=3, num_false=1):  # Handler to pi
         return print("You need to have a minimum of 2 statements!")
     elif num_false < 1: # I would also like to have a game with at least 1 lie :D
         return print("You need to have a minimum of 1 lie!")
+    elif num_false == statements: # Don't want the people having the same amount of truths as well as lies
+        return print("You can't have all the statements become lies... what's the fun in that?")
     data = {"false_statements": num_false} # Dictionary to hold our string then our bool. Has this given so that we can track how many falses are wanted
     num_true = statements-num_false # Number of truths we want
     def get_boolean(): # Handler to get a boolean value from an input we will use later on
