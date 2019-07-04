@@ -30,5 +30,5 @@ else ( x > y ) :
 # Since the if and elif conditions evaluate to false, the program will go to the else statement and immediately run the body. 
 
 # Note: elif and else can't be by themselves. There must be an if statement with them.
-        Also, you don't need an elif and else statement. You can just have an if statement and your program will run fine. 
+#        Also, you don't need an elif and else statement. You can just have an if statement and your program will run fine. 
 
