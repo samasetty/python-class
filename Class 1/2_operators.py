@@ -63,3 +63,18 @@ a /= 1 # Divide the previous value of a by 1
 a **= 2 # Exponentiate the previous value of a by 2
 a //= 2 # Floor divide the previous value of a by 2
 a %= 1 # Moduluo the previous value of a by 1
+
+# String operators:
+# There are different things we can do to strings.
+
+# We can combine strings with the addition operator.
+a = "hello" + " " + "world"
+print(a) # Prints hello world
+
+# We can also repeat strings with the multiplication operator.
+a = "hello" * 10
+print(a)
+
+# You can also find the length:
+a = "hey"
+print(len(a)) # Would print 3
