@@ -86,7 +86,7 @@ while hungry:
 i = 1
 while i < 6:
   print(i)
-  i = i + 1
+  i += 1
 
 # We can also have nested loops, which are loops inside other loops
 
