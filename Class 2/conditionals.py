@@ -25,7 +25,7 @@ if ( x == y ) :
   print("x is equal to y")
 elif( x < y ) : 
   print("x is less than y")
-else ( x > y ) : 
+else: 
   print("x is greater than y")
 # Since the if and elif conditions evaluate to false, the program will go to the else statement and immediately run the body. 
 
