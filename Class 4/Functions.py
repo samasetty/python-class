@@ -25,6 +25,7 @@ def check_leap_year(year):
 # But you always need def, followed by the function name, parentheses, and a colon.
 
 def do_my_homework():
+	pass
 
 # Python uses indentation to identify blocks of code
 # Code within the same block should be indented at the same level
@@ -63,7 +64,7 @@ def findvolume(length=1, width=1, depth=1):
     print("Length = " + str(length))
     print("Width = " + str(width))
     print("Depth = " + str(depth))
-    return length * width * depth;
+    return length * width * depth
 
 # Python functions can be defined with named arguments which may have default values provided.
 
