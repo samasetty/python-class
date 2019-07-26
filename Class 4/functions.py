@@ -64,7 +64,7 @@ def findvolume(length=1, width=1, depth=1):
   print("Length = " + str(length))
   print("Width = " + str(width))
   print("Depth = " + str(depth))
-  return length * width * depth;
+  return length * width * depth
 
 # Python functions can be defined with named arguments which may have default values provided.
 
