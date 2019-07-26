@@ -25,6 +25,7 @@ def check_leap_year(year):
 # But you always need def, followed by the function name, parentheses, and a colon.
 
 def do_my_homework():
+    pass
 
 # Python uses indentation to identify blocks of code
 # Code within the same block should be indented at the same level
@@ -39,7 +40,7 @@ def do_my_homework():
 # They are assigned the values which were passed as arguments when the function was called, elsewhere in the code.
 
 def write_a_book(character, setting, special_skill):
-	print(character + " is in " + 
+  print(character + " is in " + 
         setting + " practicing her " + 
         special_skill)
 
@@ -60,10 +61,10 @@ def ready_for_school(backpack, pencil_case):
 
 # Let's see another example.
 def findvolume(length=1, width=1, depth=1):
-    print("Length = " + str(length))
-    print("Width = " + str(width))
-    print("Depth = " + str(depth))
-    return length * width * depth;
+  print("Length = " + str(length))
+  print("Width = " + str(width))
+  print("Depth = " + str(depth))
+  return length * width * depth;
 
 # Python functions can be defined with named arguments which may have default values provided.
 
@@ -74,16 +75,16 @@ def check_leap_year(year):
   else:
     return str(year) + " is not a leap year."
     
- # A return keyword is used to return a value from a Python function
- # The value returned from a function can be assigned to a variable which can then be used in the program
- # In this example, the function check_leap_year returns a string which indicates
- # if the passed parameter is a leap year or not.
- 
- # Now, what if you want to return multiple values?
+# A return keyword is used to return a value from a Python function
+# The value returned from a function can be assigned to a variable which can then be used in the program
+# In this example, the function check_leap_year returns a string which indicates
+# if the passed parameter is a leap year or not.
+
+# Now, what if you want to return multiple values?
 def square(x, y, z):
-  x_squared = x * x
-  y_squared = y * y
-  z_squared = z * z
- 
- # Return all three values: return x_squared, y_squared, z_squared
- # All values that should be returned are listed after the return keyword and are separated by commas.
+    x_squared = x * x
+    y_squared = y * y
+    z_squared = z * z
+
+# Return all three values: return x_squared, y_squared, z_squared
+# All values that should be returned are listed after the return keyword and are separated by commas.
